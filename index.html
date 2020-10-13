@@ -1,0 +1,412 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Album for Coding Bootcamp</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  <style>
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+.btn {
+  min-width: 166px;
+}
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+svg {
+    fill: #4e555b;
+    max-width: 25%;
+    margin-bottom: 20px;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+</style>
+</head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/index.html">My Album</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+      <section class="jumbotron text-center" style="background: url('failfire_cactus.jpg') center;">
+        <div class="container">
+          <h1 class="jumbotron-heading" style="color: #fff;">About This Page</h1>
+          <p class="lead" style="color: #fff;">Hello!! Welcome to my first homework assignment, a basic portfolio page! My name is Steven Martis, and I used to work for GoDaddy in their Advanced Hosting Department. I am also a member of the WordPress Experts Group (Top 10%) and the CSS Experts Group (Top 10%).</p>
+          <p>
+            <a href="/contact.html" class="btn btn-primary my-2">Contact Us</a>
+            <a href="/portfolio.html" class="btn btn-secondary my-2">Portfolio</a>
+          </p>
+        </div>
+      </section>
+      <div class="container marketing" style="padding-top: 75px;">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg class="mk-svg-icon" data-name="mk-li-notebook" data-cacheid="icon-5f7fc129a6783" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M475.702 350.145v-235.375c0-26.003-21.083-47.086-47.086-47.086h-345.294c-26.003 0-47.086 21.083-47.086 47.086v235.375h-31.359v47.086c0 25.995 21.083 47.086 47.086 47.086h408.075c26.003 0 47.086-21.09 47.086-47.086v-47.086h-31.422zm-408.075-235.314v-.061c0-8.656 7.043-15.695 15.695-15.695h345.294c8.653 0 15.695 7.039 15.695 15.695v235.374h-15.695v-203.984c0-8.668-7.028-15.695-15.695-15.695h-313.904c-8.668 0-15.695 7.028-15.695 15.695v203.984h-15.695v-235.313zm345.294 31.329v203.984h-313.904v-203.984h313.904zm62.812 251.07c0 8.652-7.042 15.695-15.695 15.695h-408.076c-8.652 0-15.695-7.043-15.695-15.695v-15.695h439.466v15.695zm-219.733-274.47c4.338 0 7.848-3.514 7.848-7.848s-3.509-7.848-7.848-7.848c-4.337 0-7.848 3.513-7.848 7.848 0 4.333 3.511 7.848 7.848 7.848z"></path></svg>
+            <h2>Web Design</h2>
+            <p>For over six years, Failfire Designs has been creating top-tier custom websites for clients all over the globe. Lead Designer Steven Martis is a senior member of both the Upwork WordPress Experts Group and CSS Experts Group, scoring into their Top 10%.</p>
+            <p><a class="btn btn-secondary" href="failfire.com"  target="_blank" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="mk-svg-icon" data-name="mk-li-ticket" data-cacheid="icon-5f7fc129a69f3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M240.709 193.623c-3.057-3.061-7.074-4.594-11.097-4.594-4.016 0-8.031 1.533-11.096 4.594l-133.18 133.18c-6.131 6.134-6.131 16.066 0 22.19l77.686 77.694c3.065 3.065 7.081 4.598 11.097 4.598 4.016 0 8.031-1.533 11.097-4.598l133.179-133.179c6.131-6.127 6.131-16.063 0-22.198l-77.686-77.687zm-66.589 221.967l-77.687-77.687 133.164-133.179h.015l77.687 77.687-133.179 133.179zm325.997-403.73c-9.182-9.181-24.118-9.181-33.299 0l-92.914 92.915-20.746-20.75c-.429-.379-.881-.797-1.402-1.318-9.587-9.587-22.171-11.148-28.095-11.159h-55.271c-11.771.011-22.224 5.64-27.681 11.097l-221.917 221.922c-18.393 18.385-18.393 48.2 0 66.585l122.074 122.083c9.189 9.192 21.244 13.791 33.299 13.791 12.048 0 24.094-4.599 33.291-13.791l221.925-221.921c10.415-10.419 11.112-22.049 11.12-29.762v-53.193c-.008-15.056-5.472-22.466-11.104-28.091l-22.195-22.195 92.915-92.922c9.181-9.177 9.181-24.11 0-33.291zm-91.006 176.499v53.163c-.008 5.445-.598 6.265-1.923 7.598l-221.925 221.916c-4.001 4.001-8.676 4.599-11.097 4.599-2.437 0-7.104-.598-11.104-4.599l-122.076-122.085c-4.001-3.997-4.598-8.664-4.598-11.093 0-2.425.597-7.093 4.598-11.096l221.787-221.787c.789-.69 3.341-2.031 5.617-2.035h55.209c1.311.004 4.483.487 5.963 1.966.713.713 1.364 1.333 1.977 1.893l20.171 20.171-22.239 22.24-.115.145c-1.801-.245-3.602-.517-5.41-.517-10.039 0-20.079 3.836-27.743 11.496-15.32 15.323-15.327 40.165 0 55.489 7.664 7.663 17.703 11.491 27.75 11.491 10.039 0 20.087-3.828 27.743-11.491 15.319-15.324 15.319-40.166 0-55.489-1.909-1.905-3.962-3.575-6.131-5.008l17.251-17.251 44.395 44.396c1.647 1.645 1.9 1.898 1.9 5.888zm-79.641-5.852c4.92 4.92 11.457 7.017 17.902 6.641-.253 5.668-2.46 11.262-6.775 15.577-4.445 4.445-10.361 6.893-16.646 6.893-6.291 0-12.208-2.448-16.653-6.893s-6.897-10.361-6.897-16.646c0-6.292 2.452-12.201 6.897-16.653 4.146-4.146 9.594-6.468 15.403-6.774-.32 6.429 1.871 12.958 6.769 17.855zm159.55-148.452l-92.914 92.922-11.097-11.105 92.914-92.914c3.058-3.058 8.032-3.061 11.097 0 3.058 3.061 3.058 8.038 0 11.097z"></path></svg>
+            <h2>Branding / Logo Design</h2>
+            <p>It can be pretty important for a brand to stay consistent. At Failfire Designs, we pride ourselves on making custom logos that can be used to create everything else you need: menus, table inserts, business cards, additional print, newsletters.</p>
+            <p><a class="btn btn-secondary" href="failfire.com" target="_blank" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="mk-svg-icon" data-name="mk-li-users" data-cacheid="icon-5f7fc129a6e81" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M400.64 239.753c24.884-18.73 43.453-51.852 43.453-89.711 0-58.52-41.499-105.958-90.262-105.958-37.935 0-71.357 28.77-84.37 69.065-16.584-40.709-52.32-69.003-92.209-69.003-54.864 0-101.965 51.315-101.965 117.147 0 42.594 21.305 81.924 49.316 103-69.31 22.254-119.493 87.212-119.508 163.91.015 21.933 17.802 39.714 39.736 39.714h264.887c21.933 0 39.721-17.78 39.736-39.714 0-2.498-.199-4.95-.307-7.434h122.435c19.496 0 35.306-15.802 35.321-35.299-.013-68.192-44.639-125.93-106.263-145.717zm-105.176-98.586c.137-1.456.33-2.897.536-4.337.261-1.732.567-3.448.935-5.15.184-.905.352-1.839.574-2.729 3.641-14.622 11.059-27.758 20.569-37.567 10.062-9.932 22.539-15.91 35.751-15.91 13.158 0 25.604 5.948 35.651 15.803 9.565 9.825 17.044 23.007 20.707 37.705.207.859.368 1.748.552 2.621.368 1.732.682 3.495.95 5.257.207 1.426.399 2.851.537 4.292.176 1.839.283 3.678.337 5.533.031.95.108 1.869.115 2.82-.008.95-.084 1.886-.115 2.836-.053 1.854-.161 3.694-.337 5.518-.138 1.456-.33 2.882-.537 4.307-.268 1.763-.582 3.51-.95 5.257-.184.874-.345 1.748-.552 2.621-3.663 14.684-11.143 27.865-20.707 37.69-10.047 9.871-22.493 15.802-35.651 15.802-13.212 0-25.689-5.978-35.751-15.909-9.51-9.795-16.929-22.93-20.569-37.552-.222-.904-.391-1.824-.574-2.728-.368-1.701-.675-3.433-.935-5.165-.206-1.426-.399-2.867-.536-4.338-.177-1.808-.284-3.648-.337-5.502-.031-.935-.108-1.87-.115-2.836.007-.95.084-1.885.115-2.835.053-1.84.161-3.679.337-5.504zm-21.121 57.141c7.817 16.967 19.259 31.36 32.685 41.46-21.19 6.805-40.334 18.148-56.351 32.846-6.713-3.173-13.61-6.039-20.768-8.338 19.987-15.036 36.556-38.363 44.434-65.968zm-166.946-25.413v-.046c-.475-3.832-.72-7.68-.72-11.542v-.046c.008-26.516 11.665-51.592 28.272-68.222 11.993-10.99 26.753-17.503 42.303-17.503 19.305 0 37.437 10.514 50.519 27.282 9.986 13.703 17.205 30.961 19.412 48.909l.008.046c.468 3.832.713 7.695.713 11.541v.062c-.008 26.501-11.664 51.577-28.248 68.207-12.001 10.99-26.761 17.504-42.326 17.504-19.305 0-37.437-10.514-50.519-27.283-9.987-13.687-17.206-30.961-19.414-48.909zm202.322 263.631h-264.887c-4.599 0-8.346-3.74-8.346-8.323.015-61.401 39.276-115.262 97.712-134.022l3.87-1.241c21.006-6.744 56.696-8.338 78.445.015l3.809 1.227c58.45 18.746 97.727 72.605 97.743 134.007 0 4.597-3.748 8.337-8.346 8.337zm161.864-47.148h-126.627c-9.411-40.74-33.237-75.947-65.885-99.919 11.02-8.568 23.658-15.343 37.552-19.803l9.786-3.142c7.817-2.621 34.655-6.882 54.642-.077l9.994 3.203c50.511 16.216 84.454 62.766 84.468 115.798.001 2.178-1.761 3.94-3.93 3.94z"></path></svg>
+            <h2>S.E.O.</h2>
+            <p>Google now processes over 40,000 search queries every second. Worldwide, this translates to over 3.5 billion searches per day and 1.2 trillion searches per year, helping contribute to a multi-billion dollar a year industry.</p>
+            <p><a class="btn btn-secondary" href="failfire.com" target="_blank" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="background-color: #f1f1f1;">
+          <div class="col-md-7" style="min-height: 500px; padding: 40px;">
+            <h2 class="featurette-heading">BEAR LEGAL<span class="text-muted"> SOLUTIONS</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a class="btn btn-secondary" href="portfolio.html" role="button">View Full Portfolio »</a>
+          </div>
+          <div class="col-md-5" style="background: url('david-bear.jpg');">
+<!--             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="background-color: #f1f1f1;">
+          <div class="col-md-7 order-md-2" style="min-height: 500px; padding: 40px;">
+            <h2 class="featurette-heading">TARIM <span class="text-muted">CONSULTING</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a class="btn btn-secondary" href="portfolio.html" role="button">View Full Portfolio »</a>
+          </div>
+          <div class="col-md-5 order-md-1" style="background: url('tarim.jpg');">
+<!--             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="background-color: #f1f1f1;">
+          <div class="col-md-7" style="min-height: 500px; padding: 40px;">
+            <h2 class="featurette-heading">JASON MANDEL <span class="text-muted">REAL ESTATE</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a class="btn btn-secondary" href="portfolio.html" role="button">View Full Portfolio »</a>
+          </div>
+          <div class="col-md-5" style="background: url('mandel.jpg');">
+<!--             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+      <!-- <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer> -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014-2020 Failfire Designs &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/vendor/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/vendor/holder.min.js"></script>
+</html>
